@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Javier Soler Cantó" />
+
+    <title>Javier Soler Cantó</title>
+</head>
+
+<body>
+
+    <h1>FORM</h1>
+
+    <form name="form">
+        <label for="nombre">Nombre completo:</label>
+        <br>
+        <input id="nombre" name="nombre" placeholder="Jane Doe" required autofocus autocomplete="on" type="text" />
+
+        <br>
+        <br>
+
+        <label for="email">Dirección de correo eléctronico:</label>
+        <br>
+        <input id="email" name="email" required type="email" />
+
+        <br>
+        <br>
+
+        <label for="emailrep">Repite la dirección de correo eléctronico:</label>
+        <br>
+        <input id="emailrep" name="emailrep" required type="email" />
+
+        <br>
+        <br>
+
+        <label for="fecha">Fecha de llegada:</label>
+        <br>
+        <input id="fecha" name="fecha" required type="date" />
+
+        <br>
+        <br>
+
+        <label for="noches">Número de noches (99,00 USD por habitación y noche):</label>
+        <br>
+        <input onchange="account()" id="noches" value="1" name="noches" min="1" required type="number" />
+
+        <br>
+        <br>
+
+        <label for="personas">Número de personas (10,00 USD por persona adicional y noche):</label>
+        <br>
+        <input onchange="account()" id="personas" value="1" name="personas" min="1" required type="number" />
+
+        <br>
+        <br>
+
+        <span>Total estimado: <span id="total">99,00</span>USD</span>
+
+        <br>
+        <br>
+
+        <label for="promocion">Código promocional:</label>
+        <br>
+        <input id="promocion" name="promocion" type="text" />
+
+        <br>
+        <br>
+
+    <button type="submit">Solicitar reserva</button>
+
+    </form>
+
+</body>
+
+<script>
+    let precionoche = 99.00;
+    let preciopersona = 10.00;
+    let account = () => {
+        let noches = document.getElementById('noches').value;
+        let personas = document.getElementById('personas').value;
+
+        document.getElementById('total').innerHTML = personas > 1 ? precionoche * noches + preciopersona * personas : precionoche * noches;
+
+    }
+</script>
+
+</html>
