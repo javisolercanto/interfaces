@@ -17,6 +17,26 @@
         input sin necesidad de crear una para cada uno si va a ser la misma. Además nos permite escribir sobre el input
         de forma que, nos autocompletará con las opciones disponibles</p>
 
+    <pre><code>
+        &lt;label for="car">Select your favorite car:&lt;/label&gt;
+        &lt;input list="cars" name="car" id="car"&gt;
+
+        &lt;label for="car">Select your favorite car:&lt;/label&gt;
+        &lt;input list="cars" name="car" id="car">
+
+        &lt;label for="ucar">Select your car:&lt;/label&gt;
+        &lt;input list="cars" name="ucar" id="ucar">
+
+        &lt;datalist id="cars">
+            &lt;option value="Renault"&gt;
+            &lt;option value="Mercedes"&gt;
+            &lt;option value="BMW"&gt;
+            &lt;option value="Audi"&gt;
+            &lt;option value="Opel"&gt;
+        &lt;/datalist&gt;
+
+    </code></pre>
+
     <label for="car">Select your favorite car:</label>
     <input list="cars" name="car" id="car">
 
@@ -39,6 +59,8 @@
         opción de seleccionar uno o más archivos, ya que, si lo dejamos sin el atributo por defecto solo será posible
         seleccionar un elemento</p>
 
+    <pre><code>&lt;input type="file" multiple /&gt;</code></pre>
+
     <input type="file" multiple />
 
     <hr />
@@ -48,6 +70,8 @@
         posicione en el input que tenga el autofocus así será el campo en primero escriba el usuario ya que es como si
         hicieramos click en él, con el atributo autofocus ya podemos escribir sobre él sin necesidad de hacer click,
         también resalta el contorno del input para indicar que estamos sobre él</p>
+
+    <pre><code>&lt;input type="text" placeholder="Autofocus" autofocus /&gt;</code></pre>
 
     <input type="text" placeholder="Autofocus" autofocus />
 
