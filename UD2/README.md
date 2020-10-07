@@ -27,3 +27,7 @@ https://javisolercanto.github.io/interfaces/UD2/2.4/index.html
 ### 2.5
 
 https://javisolercanto.github.io/interfaces/UD2/2.5/index.html
+
+### 2.7
+
+https://javisolercanto.github.io/interfaces/UD2/2.7/index.html
