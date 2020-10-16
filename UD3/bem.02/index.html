@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BEM.02</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <button class="">Button</button>
+
+    <button class="button">Button</button>
+
+    <button class="button  button__tiny">Button</button>
+
+    <button class="button  button__light">Button</button>
+
+    <button class="button  button__dark">Button</button>
+
+    <h2>CSS</h2>
+
+    <pre><code>
+        /* COMPONENT */
+            .button {
+                font-weight: normal;
+                font-size: 18px;
+                padding: 10px 30px;
+                margin: 10px;
+                outline: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            /* ELEMENT */
+
+                    /* MODIFIER */
+
+                    .button__tiny {
+                        padding: 5px 15px;
+                        font-size: 15px;
+                    }
+
+                    .button__accept{
+                        background-color: #fff;
+                        border: 1px solid #aaa;
+                        color: #aaa;
+                    }
+
+                    .button__accept:hover{
+                        border-color: #000;
+                    }
+
+                    .button__cancel{
+                        background-color: #000;
+                        border: 1px solid #e8e8e8;
+                        color:#fff;
+                    }
+
+                    .button__cancel:hover{
+                        color: tomato;
+                        border-color: tomato;
+                    }
+    </code></pre>
+
+    <header class="head  head--main">
+        <nav class="head__nav"></nav>
+    </header>
+
+    <section class="section  section--main section--left">
+        <article class="section__article">
+            <h2 class="section__article__title"></h2>
+            <img class="section__article__image" />
+            <p class="section__article__text"></p>
+        </article>
+    </section>
+
+    <aside class="aside  aside--main aside--rigth"></aside>
+
+    <footer class="footer footer--main footer--big"></footer>
+
+</body>
+
+</html>

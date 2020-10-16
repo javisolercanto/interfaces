@@ -1,0 +1,40 @@
+/* COMPONENT */
+.button {
+    font-weight: normal;
+    font-size: 18px;
+    padding: 10px 30px;
+    margin: 10px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ELEMENT */
+
+        /* MODIFIER */
+
+        .button__tiny {
+            padding: 5px 15px;
+            font-size: 15px;
+        }
+
+        .button__light{
+            background-color: #fff;
+            border: 1px solid #aaa;
+            color: #aaa;
+        }
+
+        .button__light:hover{
+            border-color: #000;
+        }
+
+        .button__dark{
+            background-color: #000;
+            border: 1px solid #e8e8e8;
+            color:#fff;
+        }
+
+        .button__dark:hover{
+            color: tomato;
+            border-color: tomato;
+        }
