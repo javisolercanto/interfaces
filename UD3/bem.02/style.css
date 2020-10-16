@@ -1,0 +1,56 @@
+/* HEAD */
+
+/* Componente bloque (Block) */
+.head {}
+
+/* Elemento (Element) */
+.head__nav {}
+
+/* Modificador (Modifier) */
+.head--main {}
+
+
+
+/* SECTION */
+
+/* Componente bloque (Block) */
+.section {}
+
+/* Elemento (Element) */
+.section__article {}
+.section__article__title {}
+.section__article__image {}
+.section__article__text {}
+
+
+/* Modificador (Modifier) */
+.section--main {}
+.section--left {}
+
+
+
+/* ASIDE */
+
+/* Componente bloque (Block) */
+.aside {}
+
+/* Elemento (Element) */
+
+
+/* Modificador (Modifier) */
+.aside--main {}
+.aside--right {}
+
+
+
+/* FOOTER */
+
+/* Componente bloque (Block) */
+.footer {}
+
+/* Elemento (Element) */
+
+
+/* Modificador (Modifier) */
+.footer--main {}
+.footer--big {}
