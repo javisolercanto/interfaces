@@ -1,0 +1,105 @@
+/* COMPONENT */
+
+.card {
+    height: 400px;
+    width: 286px;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: silver;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* ELEMENT */
+
+    .card__image {
+        height: 180px;
+        width: 286px;
+        background-color: #777777;
+    }
+
+    .card__caption {
+        padding: 10px;
+    }
+
+    .card__title {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .card__text {
+        text-align: left;
+    }
+
+    .card__button {
+        font-size: 20px;
+        color: white;
+        background-color: #067bfe;
+        padding: 5px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #067bfe;
+        outline: none;
+    }
+
+    .card__button:hover {
+        color: #067bfe;
+        background-color: white;
+    }
+
+        /* MODIFIER */
+
+/* COMPONENT */
+
+.form {
+    font-weight: normal;
+    font-size: 10px;
+    padding: 15px;
+}
+
+/* ELEMENT */
+
+    .form__label {
+        font-size: 20px;
+        margin-bottom: 40px;
+        margin-bottom: 10px;
+    }
+
+    .form__input {
+        height: 20px;
+        width: 270px;
+        padding-left: 10px;
+    }
+
+    .form__button {
+        margin-top: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: #067bfe;
+        padding: 5px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #067bfe;
+        outline: none;
+    }
+
+    .form__button:hover {
+        color: #067bfe;
+        background-color: white;
+    }
+
+        /* MODIFIER */
+
+        .form__label--message {
+            color: #9196a0;
+            font-size: 10px;
+        }
+
+        .form__input--checkbox {
+            margin-top: 5px;
+        }
