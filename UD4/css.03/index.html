@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 03</title>
+    <style>
+        body {
+            counter-reset: div p;
+        }
+        div::before {
+            counter-increment: div;
+            content: counter(div) ". ";
+        }
+        p::after {
+            counter-increment: p;
+            content: " " counter(p) "p";
+        }
+        .note {
+            background-color: AliceBlue;
+            border: 1px solid #777;
+            box-shadow: 4px 4px 2px #333;
+            margin: 10px;
+            padding: 5px;
+        }
+        section > p:first-of-type {
+            font-weight: bold;
+        }
+        p::first-letter {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Some Things To Read</h2>
+        <p>These are some things to read.</p>
+    </div>
+
+    <section>
+        <h2>Lorum Ipsum</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+        <div class="note">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+            was born and I will give you a complete account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness.</div>
+
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+    </section>
+
+    <section>
+        <h2>Integer Tincidunt</h2>
+
+        <div class="note">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those
+            who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</div>
+
+        <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+            ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+
+        <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+            laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+
+    </section>
+
+    <section>
+        <h2>Curabitur Ullamcorper</h2>
+
+        <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+            rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+            pulvinar, hendrerit id, lorem.</p>
+
+        <div class="note">Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it
+            is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
+            pleasure. </div>
+
+        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis
+            ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
+            sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+
+        <div class="note">To take a trivial example, which of us ever undertakes laborious physical exercise, except to
+            obtain some advantage from it?</div>
+
+    </section>
+
+</body>
+
+</html>
