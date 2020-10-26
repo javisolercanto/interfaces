@@ -6,15 +6,15 @@
     <title>CSS 03</title>
     <style>
         body {
-            counter-reset: div p;
+            counter-reset: counterDiv counterP;
         }
         div::before {
-            counter-increment: div;
-            content: counter(div) ". ";
+            counter-increment: counterDiv;
+            content: counter(counterDiv) "div ";
         }
         p::after {
-            counter-increment: p;
-            content: " " counter(p) "p";
+            counter-increment: counterP;
+            content: " " counter(counterP) "p";
         }
         .note {
             background-color: AliceBlue;
