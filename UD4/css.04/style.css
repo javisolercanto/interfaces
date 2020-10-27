@@ -1,0 +1,19 @@
+.black-box {
+    height: 50px;
+    width: 280px;
+    margin: 30px;
+    padding: 15px 0px 5px 10px;
+    border-width: 10px 15px 5px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.rgb-box {
+    height: fit-content;
+    width: 320px;
+    padding: 0px 0px 0px 0px;
+    border-width: 10px 15px 5px 1px;
+    border-style: solid;
+    border-color: red blue green grey;
+    font-family: 'Courier New', Courier, monospace;
+}
