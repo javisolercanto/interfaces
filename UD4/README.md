@@ -26,21 +26,21 @@ https://javisolercanto.github.io/interfaces/UD4/css.05/index.html
 
 ### css.07
 
-https://javisolercanto.github.io/interfaces/UD4/css.07/casa.html
+https://javisolercanto.github.io/interfaces/UD4/css.07/index.html
 
 
 ### css.08
 
-https://javisolercanto.github.io/interfaces/UD4/css.08/casa.html
+https://javisolercanto.github.io/interfaces/UD4/css.08/index.html
 
 
 
 ### css.09
 
-https://javisolercanto.github.io/interfaces/UD4/css.09/casa.html
+https://javisolercanto.github.io/interfaces/UD4/css.09/index.html
 
 
 ### css.10
 
-https://javisolercanto.github.io/interfaces/UD4/css.10/casa.html
+https://javisolercanto.github.io/interfaces/UD4/css.10/index.html
 
