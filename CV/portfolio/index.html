@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Javier Soler Cantó" />
+    <meta name="keywords" content="programador, desarrollador, web, portfolio, javier soler cantó" />
+    <meta name="description" content="Portfolio de Javier Soler Cantó" />
+    <meta name="robots" content="index" />
+    <meta name="subject" content="portfolio">
+    <meta name="copyright" content="Javier Soler Cantó">
+    <meta name="language" content="ES">
+    <meta name="reply-to" content="email@hotmail.com">
+    <meta name="owner" content="Javier Soler Cantó">
+    <meta name="url" content="https://javisolercanto.github.io/interfaces/UD2/2.2/index.html">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@javisolercanto" />
+    <meta name="twitter:creator" content="@javisolercanto" />
+    <meta property="og:url" content="https://javisolercanto.github.io/interfaces/UD2/2.0/index.html" />
+
+    <meta property="og:title" content="Portfolio Javier Soler Cantó" />
+    <meta property="og:url" content="https://javisolercanto.github.io/interfaces/UD2/2.2/index.html" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/javisolercanto/logos/master/logo_negro.png?token=AK2MCFLMTW6ARFIA57GOSYS7Q4UCE" />
+    <meta name="og:email" content="jsolercanto11@gmail.com" />
+    <meta name="og:phone_number" content="672062565" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Javier Soler Cantó</title>
+</head>
+
+<body>
+
+    <div id="bg-text" class="background-text"></div>
+
+    <header>
+        <a href="./index.html"><img class="logo" alt="Personal logo" src="./assets/images/logo-blanco.png" /></a>
+    </header>
+
+    <nav class="navigation">
+        <ul class="navigatio__list">
+            <li class="navigation__list__element"><a class="navigation__link" href="./src/me.html">Me</a></li>
+            <li class="navigation__list__element"><a class="navigation__link" href="./src/knowledge.html">Knowledge</a>
+            </li>
+            <li class="navigation__list__element"><a class="navigation__link" href="./src/projects.html">Projects</a>
+            </li>
+            <li class="navigation__list__element"><a class="navigation__link" href="./src/whyme.html">Why me?</a></li>
+            <li class="navigation__list__element  navigation__list__element__right"><a class="navigation__link"
+                    href="./src/contact.html">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <section class="caption">
+        <h1 class="caption__text">I'm able to <span
+                class="caption__keywords  caption__keywords--black">&lt;Code/&gt;</Code></span> your
+            dreams</h1>
+        <h1 class="caption__text">I bring your <span
+                class="caption__keywords  caption__keywords--black">&lt;Ideas/&gt;</span> to
+            screen</h1>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Javier Soler Cantó ©</p>
+        <div class="footer__container">
+            <a href="https://github.com/javisolercanto" target="_blank"><img class="footer__container__image" src="./assets/images/github-logo-purple.png" onmouseover="this.src='./assets/images/github-logo-white.png'" onmouseout="src='./assets/images/github-logo-purple.png'"></a>
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img class="footer__container__image" src="./assets/images/linkedin-logo-purple.png" onmouseover="this.src='./assets/images/linkedin-logo-white.png'" onmouseout="src='./assets/images/linkedin-logo-purple.png'"></a>
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img class="footer__container__image" src="./assets/images/twitter-logo-purple.png" onmouseover="this.src='./assets/images/twitter-logo-white.png'" onmouseout="src='./assets/images/twitter-logo-purple.png'"></a>
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img class="footer__container__image" src="./assets/images/instagram-logo-purple.png" onmouseover="this.src='./assets/images/instagram-logo-white.png'" onmouseout="src='./assets/images/instagram-logo-purple.png'"></a>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script>
+    let spans = document.getElementsByTagName('span');
+    setInterval(() => {
+        for (let span of spans) {
+            span.className == 'caption__keywords  caption__keywords--black'
+                ? span.className = 'caption__keywords  caption__keywords--white'
+                : span.className = 'caption__keywords  caption__keywords--black';
+        };
+    }, 150);
+
+    fillbackground();
+    function fillbackground() {
+        let text = '';
+        for (let i = 0; i < 50; i++) {
+            text += 'Javier Soler Cantó ';
+        }
+        document.getElementById('bg-text').appendChild(document.createTextNode(text))
+    }
+
+</script>
+
+</html>

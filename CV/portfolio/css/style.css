@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+    --font-color: #ffffff;
+    --primary-color: #4223d4;
+    --secondary-color: #8294f7;
+
+    --primary-font: 'Signika';
+    --secondary-font: 'Permanent Marker'
+}
+
+body {
+    background-color: var(--primary-color);
+    overflow: hidden;
+    user-select: none;
+}
+
+.logo {
+    width: 10%;
+    height: 20%;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: var(--primary-font);
+    color: var(--font-color);
+}
+    .navigation__list {
+    }
+
+        .navigation__list__element {
+            display: inline;
+        }
+
+        .navigation__list__element__left {
+            float: left;
+        }
+
+        .navigation__list__element__right {
+            margin-left: 4em;
+        }
+
+    .navigation__link {
+        margin-right: 2em;
+        color: var(--font-color);
+        text-decoration: none;
+    }
+
+    .navigation__link:hover {
+        text-decoration: underline;
+    }
+
+.background-text {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    position: absolute;
+    text-align: justify;
+    font-size: 5em;
+    z-index: -1;
+    opacity: 0.1;
+    margin: 0;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .caption__text {
+        font-size: 2em;
+        font-family: var(--primary-font);
+        color: var(--font-color);
+    }
+
+    .caption__keywords {
+        font-size: 2.5em;
+        font-family: var(--secondary-font);
+    }
+
+        .caption__keywords--black {
+            color: black;
+        }
+
+        .caption__keywords--white {
+            color: var(--font-color);
+        }
+
+.footer {
+    position: fixed;
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+}
+
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: fit-content;
+    }
+
+        .footer__container__image {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            width: 1.5em;
+            height: 1.5em;
+        }
+
+    .footer__text {
+        display: inline;
+        font-family: var(--primary-font);
+        color: var(--secondary-color);
+    }
+
+    .footer__text:hover {
+        color: var(--font-color);
+    }
