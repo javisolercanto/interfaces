@@ -25,24 +25,35 @@
     <meta name="og:email" content="jsolercanto11@gmail.com" />
     <meta name="og:phone_number" content="672062565" />
 
+    <link rel="stylesheet" href=".././css/style.css">
+
     <title>Me</title>
 </head>
 <body>
 
+    <div id="bg-text" class="background-text"></div>
+
     <header>
-        <a href="../index.html"><img alt="Personal logo" width="10%" height="10%" alt="Persona logo"src="../assets/images/logo-negro.png"/></a>
-        <nav>
-            <a href="./me.html">Me</a>
-            <a href="./knowledge.html">Knowledge</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./whyme.html">Why me?</a>
-            <a href="./contact.html">Contact me</a>
-        </nav>
+        <a href="./index.html"><img class="logo" alt="Personal logo" src="../assets/images/logo-blanco.png" /></a>
     </header>
+
+    <nav class="navigation">
+        <ul class="navigatio__list">
+            <li class="navigation__list__element"><a class="navigation__link  navigation__link" href="../index.html">Home</a></li>
+            <li class="navigation__list__element"><a class="navigation__link  navigation__link--current" href="#">Me</a></li>
+            <li class="navigation__list__element"><a class="navigation__link" href="./knowledge.html">Knowledge</a>
+            </li>
+            <li class="navigation__list__element"><a class="navigation__link" href="./projects.html">Projects</a>
+            </li>
+            <li class="navigation__list__element"><a class="navigation__link" href="./whyme.html">Why me?</a></li>
+            <li class="navigation__list__element  navigation__list__element--right"><a class="navigation__link"
+                    href="./contact.html">Contact me</a></li>
+        </ul>
+    </nav>
 
     <section itemscope itemtype = "http://schema.org/Person">
         <aside>
-            <img itemprop = "image" alt="Personal protrait" src="https://i.pinimg.com/originals/65/95/85/6595856323f822a5e9b6411c5d415b49.jpg" />
+            <img class="personal" itemprop = "image" alt="Personal protrait" src="https://i.pinimg.com/originals/65/95/85/6595856323f822a5e9b6411c5d415b49.jpg" />
         </aside>
         <article>
             <p>My name is <h3 itemprop = "name">JAVIER SOLER CANTÓ</h3></p>
@@ -51,9 +62,16 @@
         </article>
     </section>
 
-    <footer>
-        <p>Javier Soler Cantó ©</p>
+    <footer class="footer">
+        <p class="footer__text">Javier Soler Cantó ©</p>
+        <div class="footer__container">
+            <a href="https://github.com/javisolercanto" target="_blank"><img class="footer__container__image" src="../assets/images/github-logo-white.png" onmouseover="this.src='../assets/images/github-logo-pink.png'" onmouseout="src='../assets/images/github-logo-white.png'"></a>
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img class="footer__container__image" src="../assets/images/linkedin-logo-white.png" onmouseover="this.src='../assets/images/linkedin-logo-pink.png'" onmouseout="src='../assets/images/linkedin-logo-white.png'"></a>
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img class="footer__container__image" src="../assets/images/twitter-logo-white.png" onmouseover="this.src='../assets/images/twitter-logo-pink.png'" onmouseout="src='../assets/images/twitter-logo-white.png'"></a>
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img class="footer__container__image" src="../assets/images/instagram-logo-white.png" onmouseover="this.src='../assets/images/instagram-logo-pink.png'" onmouseout="src='../assets/images/instagram-logo-white.png'"></a>
+        </div>
     </footer>
     
 </body>
+<!-- <script src="../scripts/background.js"></script> -->
 </html>

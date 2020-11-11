@@ -3,22 +3,29 @@
 
 :root {
     --font-color: #ffffff;
-    --primary-color: #4223d4;
-    --secondary-color: #8294f7;
+    --primary-color: #1b1b1b;
+    --secondary-color: #ff1e56;
 
     --primary-font: 'Signika';
     --secondary-font: 'Permanent Marker'
 }
 
 body {
-    background-color: var(--primary-color);
     overflow: hidden;
     user-select: none;
+    background:linear-gradient(90deg, #282828 0%,#121212 100% );
 }
 
 .logo {
     width: 10%;
     height: 20%;
+}
+
+.personal {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 
 .navigation {
@@ -39,13 +46,9 @@ body {
             display: inline;
         }
 
-        .navigation__list__element__left {
-            float: left;
-        }
-
-        .navigation__list__element__right {
-            margin-left: 4em;
-        }
+            .navigation__list__element--right {
+                margin-left: 4em;
+            }
 
     .navigation__link {
         margin-right: 2em;
@@ -53,8 +56,16 @@ body {
         text-decoration: none;
     }
 
+        .navigation__link--current {
+            text-decoration: underline;
+            text-decoration-color: var(--secondary-color);
+        }
+
     .navigation__link:hover {
+        transition: 1s ease;
         text-decoration: underline;
+        color: var(--secondary-color);
+        text-decoration-color: var(--secondary-color);
     }
 
 .background-text {
@@ -64,8 +75,9 @@ body {
     text-align: justify;
     font-size: 5em;
     z-index: -1;
-    opacity: 0.1;
-    margin: 0;
+    opacity: 0.07;
+    transform: skewY(20deg);
+    transform-origin: 200% 90%;
 }
 
 .caption {
@@ -87,10 +99,12 @@ body {
 
         .caption__keywords--black {
             color: black;
+            text-shadow: 1px 5px paleturquoise;
         }
 
         .caption__keywords--white {
-            color: var(--font-color);
+            color: var(--secondary-color);
+            text-shadow: 1px 5px paleturquoise;
         }
 
 .footer {
@@ -122,9 +136,9 @@ body {
     .footer__text {
         display: inline;
         font-family: var(--primary-font);
-        color: var(--secondary-color);
+        color: var(--font-color);
     }
 
     .footer__text:hover {
-        color: var(--font-color);
+        color: var(--secondary-color);
     }
