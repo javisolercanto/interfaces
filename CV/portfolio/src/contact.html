@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="Javier Soler Cantó"/>
+    <meta name="author" content="Javier Soler Cantó" />
     <meta name="keywords" content="programador, desarrollador, web, portfolio, javier soler cantó" />
     <meta name="description" content="Portfolio de Javier Soler Cantó" />
     <meta name="robots" content="index" />
@@ -24,9 +24,9 @@
         content="https://raw.githubusercontent.com/javisolercanto/logos/master/logo_negro.png?token=AK2MCFLMTW6ARFIA57GOSYS7Q4UCE" />
     <meta name="og:email" content="jsolercanto11@gmail.com" />
     <meta name="og:phone_number" content="672062565" />
-    
+
     <link rel="stylesheet" href=".././css/style.css">
-    
+
     <title>Contact Me</title>
 </head>
 
@@ -35,12 +35,12 @@
     <div id="bg-text" class="background-text"></div>
 
     <header>
-        <a href="../index.html"><img alt="Personal logo" width="10%" height="10%" alt="Persona logo"
+        <a href="../index.html"><img class="logo" alt="Personal logo" width="10%" height="10%" alt="Persona logo"
                 src="../assets/images/logo-negro.png" /></a>
     </header>
 
     <nav class="navigation">
-        <ul class="navigatio__list">
+        <ul class="navigation__list">
             <li class="navigation__list__element"><a class="navigation__link" href="../index.html">Home</a></li>
             <li class="navigation__list__element"><a class="navigation__link" href="./me.html">Me</a></li>
             <li class="navigation__list__element"><a class="navigation__link" href="./knowledge.html">Knowledge</a>
@@ -48,23 +48,43 @@
             <li class="navigation__list__element"><a class="navigation__link" href="./projects.html">Projects</a>
             </li>
             <li class="navigation__list__element"><a class="navigation__link" href="./whyme.html">Why me?</a></li>
-            <li class="navigation__list__element  navigation__list__element--right"><a class="navigation__link  navigation__link--current"
-                    href="#">Contact me</a></li>
+            <li class="navigation__list__element  navigation__list__element--right"><a
+                    class="navigation__link  navigation__link--current" href="#">Contact me</a></li>
         </ul>
     </nav>
 
-    <section>
-        <h1>Contact me</h1>
-        <form>
-            <input required placeholder="Name" type="text"/>
-            <input required placeholder="Email" type="email"/>
-            <textarea required placeholder="Message"></textarea>
-            <button type="submit">Submit</button>
+    <section class="contactme">
+        <form class="contactme__form">
+            <fieldset>
+                <legend>Contact me</legend>
+                <input class="contactme__input" required placeholder="Name" type="text" />
+                <input class="contactme__input" required placeholder="Email" type="email" />
+                <textarea required placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </fieldset>
         </form>
     </section>
 
-    <footer>
-        <p>Javier Soler Cantó ©</p>
+    <footer class="footer">
+        <p class="footer__text">Javier Soler Cantó ©</p>
+        <div class="footer__container">
+            <a href="https://github.com/javisolercanto" target="_blank"><img class="footer__container__image"
+                    src="../assets/images/github-logo-white.png"
+                    onmouseover="this.src='../assets/images/github-logo-pink.png'"
+                    onmouseout="src='../assets/images/github-logo-white.png'"></a>
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img
+                    class="footer__container__image" src="../assets/images/linkedin-logo-white.png"
+                    onmouseover="this.src='../assets/images/linkedin-logo-pink.png'"
+                    onmouseout="src='../assets/images/linkedin-logo-white.png'"></a>
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img
+                    class="footer__container__image" src="../assets/images/twitter-logo-white.png"
+                    onmouseover="this.src='../assets/images/twitter-logo-pink.png'"
+                    onmouseout="src='../assets/images/twitter-logo-white.png'"></a>
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img
+                    class="footer__container__image" src="../assets/images/instagram-logo-white.png"
+                    onmouseover="this.src='../assets/images/instagram-logo-pink.png'"
+                    onmouseout="src='../assets/images/instagram-logo-white.png'"></a>
+        </div>
     </footer>
 
 </body>
