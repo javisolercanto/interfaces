@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>flex.01</title>
+    <style type="text/css">
+        .box {
+            padding: 1em;
+            margin: 1em;
+            width: 30%;
+            height: fit-content;
+            background-color: #ff6247;
+        }
+
+        .box__number {
+            padding: 0.5em;
+            margin: 0.5em;
+            width: fit-content;
+            height: fit-content;
+            font-size: 2.5em;
+            color: white;
+            background-color: #1600ff;
+            border: 1px solid white;
+        }
+
+        .box__first {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .box__second {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+
+        .box__third {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box  box__first">
+        <div class="box__number">1</div>
+        <div class="box__number">2</div>
+        <div class="box__number">3</div>
+    </div>
+    <div class="box  box__second">
+        <div class="box__number">1</div>
+        <div class="box__number">2</div>
+        <div class="box__number">3</div>
+    </div>
+    <div class="box  box__third">
+        <div class="box__number">1</div>
+        <div class="box__number">2</div>
+        <div class="box__number">3</div>
+    </div>
+</body>
+
+</html>
