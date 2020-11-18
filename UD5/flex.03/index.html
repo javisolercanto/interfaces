@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FLEXBOX HOLY GRAIL LAYOUT</title>
+    <style media="screen">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .app {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: sans-serif;
+            line-height: 1.4;
+        }
+
+        header,
+        footer {
+            background-color: skyblue;
+            height: 5rem;
+            flex-shrink: 0;
+        }
+
+        ul {
+            padding: 2em;
+        }
+
+        ul li {
+            white-space: nowrap;
+        }
+
+        nav,
+        aside {
+            background-color: #ede;
+            flex-grow: 2;
+        }
+
+        #main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        article {
+            background-color: #EEE;
+            overflow: auto;
+            padding: 3em;
+            flex: 1 0 60%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+        <header>
+            <h3>Header</h3>
+            <p>FLEXBOX HOLY GRAIL LAYOUT</p>
+        </header>
+        <div id="main">
+            <nav>
+                <h3>Navigation</h3>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                    <li>Link 5</li>
+                </ul>
+            </nav>
+            <article>
+                <h3>Lorem</h3> ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit ducimus necessitatibus
+                obcaecati ipsam. Repellendus nesciunt ducimus, explicabo omnis nemo rem nam, corporis eos sint, quia
+                maxime nobis deleniti doloremque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat vel,
+                asperiores quo optio eaque, voluptas velit harum impedit doloribus modi in vero doloremque, ex amet
+                vitae aliquam non consectetur, iusto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+                minus iste, incidunt, fugit atque, in nulla ad quasi nam nesciunt illo. Ea consectetur id, iure atque
+                dolorem nam repellendus aspernatur?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque distinctio fuga, voluptate
+                laboriosam dolor doloribus quaerat nobis error accusamus mollitia quas porro consequuntur aliquid labore
+                expedita neque commodi numquam culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+                impedit at vero necessitatibus fuga error eaque quam nemo ipsa esse debitis repellendus, beatae
+                exercitationem deserunt nihil inventore, libero iusto, voluptate.Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Nobis fugit ducimus necessitatibus obcaecati ipsam. Repellendus nesciunt ducimus,
+                explicabo omnis nemo rem nam, corporis eos sint, quia maxime nobis deleniti doloremque.Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Repellat vel, asperiores quo optio eaque, voluptas velit harum
+                impedit doloribus modi in vero doloremque, ex amet vitae aliquam non consectetur, iusto.Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Provident minus iste, incidunt, fugit atque, in nulla ad
+                quasi nam nesciunt illo. Ea consectetur id, iure atque dolorem nam repellendus aspernatur?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque distinctio fuga, voluptate
+                laboriosam dolor doloribus qu
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque distinctio fuga, voluptate
+                laboriosam dolor doloribus quaerat nobis error accusamus mollitia quas porro consequuntur aliquid labore
+                expedita neque commodi numquam culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+                impedit at vero necessitatibus fuga error eaque quam nemo ipsa esse debitis repellendus, beatae
+                exercitationem deserunt nihil inventore, libero iusto, voluptate.
+            </article>
+            <aside>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                    <li>Link 5</li>
+                </ul>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                    <li>Link 5</li>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+            <h3>Footer</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
