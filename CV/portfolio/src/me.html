@@ -33,10 +33,9 @@
 
 <body>
 
-    <div id="bg-text" class="background-text"></div>
-
     <header>
-        <a href="./index.html"><img class="logo" alt="Personal logo" src="../assets/images/logo-blanco.png" /></a>
+        <a href="../index.html"><img class="logo" alt="Personal logo"
+                src="../assets/images/personal-logo-white.png"/></a>
     </header>
 
     <nav class="navigation">
@@ -55,20 +54,17 @@
         </ul>
     </nav>
 
-    <section itemscope itemtype="http://schema.org/Person">
-        <aside>
-            <img class="personal" itemprop="image" alt="Personal protrait"
-                src="https://i.pinimg.com/originals/65/95/85/6595856323f822a5e9b6411c5d415b49.jpg" />
+    <section class="me" itemscope itemtype="http://schema.org/Person">
+        <aside class="me__aside">
+            <div class="me__aside__wrapperimage">
+                <img class="me__aside__image" itemprop="image" alt="Personal protrait" src="../assets/images/me.png" />
+            </div>
+            <cite class="me__aside__cite">"Your ambitions can overcome your limits"</cite>
         </aside>
-        <article>
-            <p>My name is
-            <h3 itemprop="name">JAVIER SOLER CANTÓ</h3>
-            </p>
-            <p>I'm
-            <h3>21</h3>, I live in <h3 itemprop="address">ALCOY</h3>, a city of Spain</p>
-            <p>and programming is my
-            <h3 itemprop="knowsAbout">PASSION</h3>
-            </p>
+        <article class="me__article">
+            <p>My name is <span itemprop="name">Javier Soler Cantó</span>.<br>I'm <span>21</span>, I live in <span
+                    itemprop="address">Alcoy</span>, a city of Spain <br> and programming is my <span
+                    itemprop="knowsAbout">passion</span></p>
         </article>
     </section>
 
@@ -95,6 +91,5 @@
     </footer>
 
 </body>
-<!-- <script src="../scripts/background.js"></script> -->
 
 </html>
