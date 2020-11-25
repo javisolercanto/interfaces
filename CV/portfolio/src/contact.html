@@ -32,11 +32,9 @@
 
 <body>
 
-    <div id="bg-text" class="background-text"></div>
-
     <header>
-        <a href="../index.html"><img class="logo" alt="Personal logo" width="10%" height="10%" alt="Persona logo"
-                src="../assets/images/logo-negro.png" /></a>
+        <a href="../index.html"><img class="logo" alt="Personal logo"
+                src="../assets/images/personal-logo-white.png"/></a>
     </header>
 
     <nav class="navigation">
@@ -53,15 +51,79 @@
         </ul>
     </nav>
 
+
     <section class="contactme">
+        <h1 class="contactme__title">Contact me</h1>
         <form class="contactme__form">
-            <fieldset>
-                <legend>Contact me</legend>
-                <input class="contactme__input" required placeholder="Name" type="text" />
-                <input class="contactme__input" required placeholder="Email" type="email" />
-                <textarea required placeholder="Message"></textarea>
-                <button type="submit">Submit</button>
-            </fieldset>
+            <div class="contactme__form__fields">
+                <div class="contactme__form__section">
+                    <div class="contactme__box--double">
+                        <div class="contactme__box--tiny">
+                            <label for="name" class="contactme__label">Name:</label>
+                            <input id="name" name="name" class="contactme__input  contactme__input--tiny" required
+                                type="text" autocomplete="name" />
+                        </div>
+                        <div class="contactme__box--tiny">
+                            <label for="name" class="contactme__label">Surname:</label>
+                            <input id="name" name="name" class="contactme__input  contactme__input--tiny" required
+                                type="text" autocomplete="name" />
+                        </div>
+                    </div>
+                    <div class="contactme__box">
+                        <label for="email" class="contactme__label">Email:</label>
+                        <input id="email" name="email" class="contactme__input" required type="email"
+                            autocomplete="email" />
+                    </div>
+                    <div class="contactme__box--double">
+                        <div class="contactme__box--supertiny">
+                            <label for="phone" class="contactme__label">Prefix:</label>
+                            <select id="phone" name="email" class="contactme__input  contactme__input--supertiny"
+                                required type="text" maxlength="9">
+                                <option selected>+34</option>
+                                <option>+351</option>
+                                <option>+44</option>
+                                <option>+33</option>
+                                <option>+46</option>
+                            </select>
+                        </div>
+                        <div class="contactme__box--medium">
+                            <label for="phone" class="contactme__label">Phone:</label>
+                            <input id="phone" name="phone" class="contactme__input  contactme__input--medium" required
+                                type="tel" maxlength="9" />
+                        </div>
+                    </div>
+                </div>
+                <hr class="contactme__form__separator" />
+                <div class="contactme__form__section">
+                    <div class="contactme__box">
+                        <label class="contactme__label">Documentation:</label>
+                        <input class="contactme__input  contactme__file" accept=".pdf" type="file" />
+                    </div>
+                    <div class="contactme__box--double">
+                        <div class="contactme__box--tiny">
+                            <label for="date" class="contactme__label">Birthday:</label>
+                            <input id="date" name="date"
+                                class="contactme__input  contactme__input--tiny  contactme__datetime" required
+                                type="date" />
+                        </div>
+                        <div class="contactme__box--tiny">
+                            <label class="contactme__label">Work topic:</label>
+                            <select class="contactme__select" required>
+                                <option disabled selected>Select option</option>
+                                <option>Web page</option>
+                                <option>Mobile app</option>
+                                <option>Job offer</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contactme__box">
+                        <label class="contactme__label">Message:</label>
+                        <textarea class="contactme__input  contactme__textarea" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <button class="contactme__button">Submit</button>
         </form>
     </section>
 
@@ -88,5 +150,4 @@
     </footer>
 
 </body>
-<script src="../scripts/background.js"></script>
 </html>
