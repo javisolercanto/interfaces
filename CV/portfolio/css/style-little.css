@@ -10,6 +10,16 @@
     --secondary-font: 'Permanent Marker'
 }
 
+::placeholder {
+    color: #E2E2E2;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -24,11 +34,9 @@ body {
     justify-content: center;
     flex-direction: row;
     overflow: hidden;
-    /* background:linear-gradient(90deg, #282828 0%,#121212 100% ); */
     background-image: url("../assets/images/pattern4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .logo {
@@ -49,17 +57,53 @@ body {
     top: 0;
     left: 0;
     margin-top: 1em;
-    width: 100%;
-    text-align: center;
-    font-size: 1.3em;
+    width: 20%;
+    font-size: 1em;
     font-family: var(--primary-font);
     color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-    .navigation__list {
+
+.navigation > ul {  
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navigation > img {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    width: 20%;
+    height: 30%;
+}
+
+.navigation:hover > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    visibility: visible;
+    opacity: 1;
+    transition: 2s all;
+}
+
+.navigation:hover > * > *{
+    margin-left: 10%;
+}
+
+    .navigation__list > * {
+        margin-bottom: 2%;
+    }
+
+    .navigation__list:hover > * {
+        display: inline;
     }
 
         .navigation__list__element {
-            display: inline;
         }
 
             .navigation__list__element--right {
@@ -75,6 +119,7 @@ body {
         .navigation__link--current {
             text-decoration: underline;
             text-decoration-color: var(--secondary-color);
+            display: inline;
         }
 
     .navigation__link:hover {
@@ -105,7 +150,7 @@ body {
     height: fit-content;
     max-height: 35em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     font-family: var(--primary-font);
@@ -122,8 +167,8 @@ body {
 }
 
     .me__aside__wrapperimage {
-        width: 25em;
-        height: 25em;
+        width: 10em;
+        height: 10em;
     }
 
 .me__article {
@@ -134,7 +179,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    font-size: 2em;
+    font-size: 1em;
     line-height: 3em;
 }
 
@@ -165,8 +210,9 @@ body {
     font-family: var(--primary-font);
     color: var(--font-color);
     width: 50%;
-    height: fit-content;
+    max-height: 60%;
     display: flex;
+    overflow: scroll;
     flex-direction: column;
     align-items: center;
 }
@@ -185,11 +231,11 @@ body {
         text-align: justify;
     }
 
-.knowledge {
+/* .knowledge {
     margin: 2px;
     font-family: var(--primary-font);
     color: var(--font-color);
-    width: 50%;
+    width: 70%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -208,20 +254,20 @@ body {
     .knowledge__aptitude {
         margin: 1em;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
     .knowledge__aptitude__image {
-        height: 10%;
-        width: 10%;
+        height: 30%;
+        width: 30%;
+        margin-bottom: 5%;
     }
 
     .knowledge__aptitude__bar {
         height: 2em;
         width: 100%;
-        margin-left: 1.5em;
         border-radius: 1em;
         border: 1px solid var(--secondary-color);
         background-color: #12121299;
@@ -250,7 +296,7 @@ body {
 
             .knowledge__aptitude__bar_progress--60 {
                 width: 60%;
-            }
+            } */
 
 .projects {
     color: white;
@@ -273,9 +319,9 @@ body {
 .projects__feed {
     height: 28em;
     width: fit-content;
-    max-height: 30em;
+    max-height: 28em;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     gap: 0.5em 0.5em;
     overflow: scroll;
 }
@@ -475,11 +521,6 @@ body {
         cursor: pointer;
     }
 
-    ::placeholder {
-        color: #E2E2E2;
-        opacity: 1;
-    }
-
 
 /* CAPTION */
 .caption {
@@ -541,7 +582,7 @@ body {
         }
 
     .footer__text {
-        display: inline;
+        display: none;
         font-family: var(--primary-font);
         color: var(--font-color);
         transition: 1s all;
