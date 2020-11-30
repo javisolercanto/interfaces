@@ -1,0 +1,43 @@
+.grid {
+  background-color: black;
+  display: grid;
+  grid-template-areas:
+    'title title title'
+    'aside-left main aside-right'
+    'footer footer footer';
+  grid-template-rows: 1fr 100% 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.grid > * {
+  font-size: 3em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background-color: #FF8267;
+  grid-area: title;
+}
+
+.main {
+  background-color: #26D100;
+  grid-area: main;
+}
+
+.aside-left {
+  background-color: #6565FF;
+  grid-area: aside-left;
+}
+
+.aside-right {
+  background-color: #0000FF;
+  grid-area: aside-right;
+}
+
+.footer {
+  background-color: #D10000;
+  grid-area: footer;
+}
