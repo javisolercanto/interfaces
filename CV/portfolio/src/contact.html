@@ -39,7 +39,7 @@
                 src="../assets/images/personal-logo-white.png"/></a>
     </header>
 
-    <nav class="navigation"><img src="../assets/images/menu-white.png" />
+    <nav class="navigation"><img alt="menu image" src="../assets/images/menu-white.png" />
         <ul class="navigation__list">
             <li class="navigation__list__element"><a class="navigation__link"
                     href="../index.html">Home</a></li>
@@ -67,8 +67,8 @@
                                 type="text" autocomplete="name" />
                         </div>
                         <div class="contactme__box--tiny">
-                            <label for="name" class="contactme__label">Surname:</label>
-                            <input id="name" name="name" class="contactme__input  contactme__input--tiny" required
+                            <label for="surname" class="contactme__label">Surname:</label>
+                            <input id="surname" name="surname" class="contactme__input  contactme__input--tiny" required
                                 type="text" autocomplete="name" />
                         </div>
                     </div>
@@ -79,14 +79,15 @@
                     </div>
                     <div class="contactme__box--double">
                         <div class="contactme__box--supertiny">
-                            <label for="phone" class="contactme__label">Prefix:</label>
-                            <select id="phone" name="email" class="contactme__input  contactme__input--supertiny"
-                                required type="text" maxlength="9">
-                                <option selected>+34</option>
-                                <option>+351</option>
-                                <option>+44</option>
-                                <option>+33</option>
-                                <option>+46</option>
+                            <label for="prefix" class="contactme__label">Prefix:</label>
+                            <select id="prefix" name="prefix" class="contactme__input  contactme__input--supertiny"
+                                required>
+                                <option value="" disabled selected>+</option>
+                                <option value="34">+34</option>
+                                <option value="351">+351</option>
+                                <option value="44">+44</option>
+                                <option value="33">+33</option>
+                                <option value="46">+46</option>
                             </select>
                         </div>
                         <div class="contactme__box--medium">
@@ -112,11 +113,11 @@
                         <div class="contactme__box--tiny">
                             <label class="contactme__label">Work topic:</label>
                             <select class="contactme__select" required>
-                                <option disabled selected>Select option</option>
-                                <option>Web page</option>
-                                <option>Mobile app</option>
-                                <option>Job offer</option>
-                                <option>Other</option>
+                                <option value="" disabled selected>Select option</option>
+                                <option value="web">Web page</option>
+                                <option value="mobile">Mobile app</option>
+                                <option value="job">Job offer</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
                     </div>
@@ -133,19 +134,19 @@
     <footer class="footer">
         <p class="footer__text">Javier Soler Cantó ©</p>
         <div class="footer__container">
-            <a href="https://github.com/javisolercanto" target="_blank"><img class="footer__container__image"
+            <a href="https://github.com/javisolercanto" target="_blank"><img alt="github logo" class="footer__container__image"
                     src="../assets/images/github-logo-white.png"
                     onmouseover="this.src='../assets/images/github-logo-pink.png'"
                     onmouseout="src='../assets/images/github-logo-white.png'"></a>
-            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img alt="linkedin logo"
                     class="footer__container__image" src="../assets/images/linkedin-logo-white.png"
                     onmouseover="this.src='../assets/images/linkedin-logo-pink.png'"
                     onmouseout="src='../assets/images/linkedin-logo-white.png'"></a>
-            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img alt="twitter logo"
                     class="footer__container__image" src="../assets/images/twitter-logo-white.png"
                     onmouseover="this.src='../assets/images/twitter-logo-pink.png'"
                     onmouseout="src='../assets/images/twitter-logo-white.png'"></a>
-            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img
+            <a href="https://www.linkedin.com/in/javiersolercanto/" target="_blank"><img alt="instagram logo"
                     class="footer__container__image" src="../assets/images/instagram-logo-white.png"
                     onmouseover="this.src='../assets/images/instagram-logo-pink.png'"
                     onmouseout="src='../assets/images/instagram-logo-white.png'"></a>

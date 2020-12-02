@@ -74,9 +74,9 @@ body {
 }
 
 .navigation > img {
+    display: block;
     visibility: visible;
     opacity: 1;
-    display: block !important;
     width: 20%;
     height: 30%;
 }
