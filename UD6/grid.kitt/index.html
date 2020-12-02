@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+
+    <style>
+        * {
+            height: 100%;
+            width: 100%;
+        }
+
+        html {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dashboard {
+            width: 60%;
+            height: 90%;
+            padding: 2em;
+            background-color: black;
+
+
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 3em;
+            row-gap: 3em;
+        }
+
+        .dashboard__bars {
+            width: auto;
+            height: auto;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            grid-area: 1 / 2 / 4 / 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5em;
+        }
+
+        .dashboard__bars > div {
+            background-color: tomato;
+        }
+
+        .dashboard__levels {
+            width: auto;
+            height: auto;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 3em;
+            padding-right: 3em;
+
+            
+            grid-area: 4 / 2 / span 2 / 3;
+            display: grid;
+            grid-template-columns: 0.5fr 3fr;
+            gap: 0.5em 4em;
+        }
+
+        .dashboard__levels > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 150%;
+        }
+
+        .dashboard__levels--green {
+            background-color: green;
+        }
+
+        .dashboard__levels--yellow {
+            background-color: yellow;
+        }
+
+        .dashboard__levels--red {
+            background-color: red;
+        }
+        
+        .dashboard__pilot {
+            width: auto;
+            height: auto;
+            font-size: 150%;
+            border-radius: 0.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+            .dashboard__pilot--yellow {
+                background-color: yellow;
+            }
+
+            .dashboard__pilot--red {
+                background-color: red;
+            }
+    </style>
+
+</head>
+<body>
+    <section class="dashboard">
+
+        <div class="dashboard__pilot  dashboard__pilot--yellow">
+            ALT
+        </div>
+        <div class="dashboard__pilot  dashboard__pilot--yellow">
+            AUX
+        </div>
+
+
+        <div class="dashboard__pilot  dashboard__pilot--yellow">
+            OIL PRESS
+        </div>
+        <div class="dashboard__pilot  dashboard__pilot--yellow">
+            SAT COMM
+        </div>
+
+
+        <div class="dashboard__pilot  dashboard__pilot--red">
+            OIL TEMP
+        </div>
+        <div class="dashboard__pilot  dashboard__pilot--red">
+            ACC
+        </div>
+
+
+        <div class="dashboard__pilot  dashboard__pilot--red">
+            EGT
+        </div>
+        <div class="dashboard__pilot  dashboard__pilot--red">
+            RADAR
+        </div>
+
+
+        <div class="dashboard__pilot  dashboard__pilot--red">
+            FUEL
+        </div>
+        <div class="dashboard__pilot  dashboard__pilot--red">
+            MP1
+        </div>
+
+        <div class="dashboard__bars">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="dashboard__levels">
+            <div class="dashboard__levels--yellow" ></div>
+            <div class="dashboard__levels--green">
+                NORMAL CRUISE
+            </div>
+
+            <div class="dashboard__levels--yellow"></div>
+            <div class="dashboard__levels--yellow">
+                AUTO CRUISE
+            </div>
+
+            <div class="dashboard__levels--yellow"></div>
+            <div class="dashboard__levels--red">
+                PURSUIT
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
