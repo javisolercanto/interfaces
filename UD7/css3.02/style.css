@@ -1,0 +1,98 @@
+:root {
+    --card-color: #fefbfa;
+    --border-style: 1px solid black;
+    --null: "";
+    --avatar-icon: url('https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png');
+    --pdf-icon: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png');
+    --zip-icon: url('https://www.flaticon.com/svg/static/icons/svg/28/28814.svg');
+    --bg-content: "JAVIER SOLER CANTÓ\aJAVIER SOLER CANTÓ\aJAVIER SOLER CANTÓ\aJAVIER SOLER CANTÓ\aJAVIER SOLER CANTÓ\aJAVIER SOLER CANTÓ\aJAVIER SOLER CANTÓ\aJAVIER SOLER CANTÓ\aJAVIER SOLER CANTÓ\a"
+}
+
+.visit-card {
+    margin: 2em;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5em;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--card-color);
+    border: var(--border-style);
+}
+
+.visit-card--front > * {
+    z-index: 1;
+}
+
+.visit-card--front span:first-child {
+    font-weight: bold;
+}
+
+.visit-card--front a:last-child {
+    font-weight: bold;
+    margin: 1em;
+}
+
+.visit-card--front a[href^="mailto"]::before {
+    content: var(--null);
+    background-image: var(--avatar-icon);
+    background-size: 20px 20px;
+    width: 20px; 
+    height: 20px;
+    margin-right: 1em;
+    display: inline-block;
+}
+
+.visit-card--reverse span:first-child {
+    margin-bottom: 1em;
+}
+
+.visit-card--reverse > a {
+    font-style: italic;
+}
+
+.visit-card--reverse > a::before {
+    content: var(--null);
+    background-image: var(--pdf-icon);
+    background-size: 20px 20px;
+    width: 20px; 
+    height: 20px;
+    margin-right: 1em;
+    display: inline-block;
+}
+
+.visit-card--reverse a:last-child {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.visit-card--reverse a:last-child::before {
+    content: var(--null);
+    background-image: var(--zip-icon);
+    background-size: 20px 20px;
+    width: 20px; 
+    height: 20px;
+    margin-right: 1em;
+    display: inline-block;
+}
+
+.visit-card__bg-text {
+    top: 0;
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+
+    opacity: 0.5;
+    color: red;
+    transform: rotate(40deg);
+}
+
+.visit-card__bg-text::before {
+    content: var(--bg-content);
+}
