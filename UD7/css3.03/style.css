@@ -25,10 +25,10 @@ li {
     margin: 0.5em;
 }
 
-li:hover {
+a:hover {
     font-weight: bold;
 }
 
-li:hover ~ a[href] {
-    color: red;
+h2:target {
+    background-color: yellow;
 }
