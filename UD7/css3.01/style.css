@@ -1,0 +1,15 @@
+body {
+    font: .8em Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+header {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(10, 20, 30, .8);
+}
