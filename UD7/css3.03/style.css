@@ -1,5 +1,6 @@
 :root {
     --border-style: 1px solid black;
+    --highlight-color: yellow;
 }
 
 section {
@@ -18,7 +19,6 @@ ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    background-color: thistle;
 }
 
 li {
@@ -30,5 +30,5 @@ a:hover {
 }
 
 h2:target {
-    background-color: yellow;
+    background-color: var(--highlight-color);
 }
