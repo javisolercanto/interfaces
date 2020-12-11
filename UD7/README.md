@@ -17,3 +17,19 @@ https://javisolercanto.github.io/interfaces/UD7/css3.03/index.html
 ### css3.04
 
 https://javisolercanto.github.io/interfaces/UD7/css3.04/index.html
+
+### css3.05
+
+https://javisolercanto.github.io/interfaces/UD7/css3.05/index.html
+
+### css3.06
+
+https://javisolercanto.github.io/interfaces/UD7/css3.06/index.html
+
+### css3.07
+
+https://javisolercanto.github.io/interfaces/UD7/css3.07/index.html
+
+### css3.08
+
+https://javisolercanto.github.io/interfaces/UD7/css3.08/index.html
