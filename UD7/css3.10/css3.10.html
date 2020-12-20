@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Transform CSS :: DIW</title>
+  <style media="screen">
+  .animate {
+      color: #fff;
+      text-align: center;
+      height: 150px;
+      width: 150px;
+      background-color: tomato;
+      margin: 10px;
+      float: left;
+      transition: transform 0.5s ease;
+  }
+  .rotate {
+    transform: rotate(100deg);
+  }
+  .scale {
+    transform: scale(0.7);
+  }
+  .skewX {
+    transform: skewX(20deg);
+  }
+  .translate {
+    transform: translate(5rem);
+  }
+  .matrix {
+    transform: matrix(1, 0, -1, 2, 50, 60);
+  }
+  .rotate3d {
+    transform: rotate3d(1,0,1,120deg);
+  }
+  .rotateY {
+    transform: rotateY(180deg);
+  }
+  .rotateZ {
+    transform: rotateZ(90deg);
+  }
+  .rotateXYZ {
+  }
+  </style>
+</head>
+<body>
+      <h2>transform</h2>
+        <div class="animate rotate"><h4>Rotate</h4></div>
+        <div class="animate scale"><h4>Scale</h4></div>
+        <div class="animate skewX"><h4>SkewX</h4></div>
+        <div class="animate translate"><h4>Translate</h4></div>
+        <div class="animate matrix"><h4>matrix</h4></div>
+        <div class="animate rotate3d"><h4>rotate3d</h4></div>
+        <div class="animate rotateY"><h4>RotateY</h4></div>
+        <div class="animate rotateZ"><h4>rotateZ</h4></div>
+        <div class="animate rotateXYZ"><h4>rotateXYZ</h4></div>
+</body>
+</html>
