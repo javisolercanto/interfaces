@@ -1,0 +1,134 @@
+:root {
+    --box-color: #F3F1F1;
+    --primary-color:#005DA6;
+    --accent-color: #005DA6;
+    --shadow-color: grey;
+}
+
+@font-face {
+    font-family: Arial;
+    src: local("Arial"), url(./assets/arial.ttf);
+}
+
+body {
+    font-family: Verdana;
+}
+
+article {
+    height: fit-content;
+    width: 40rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--box-color);
+    box-shadow: 0px 0px 5px 3px var(--shadow-color);
+}
+
+.multicol {
+    padding: 1rem;
+
+    column-count: 3;
+    column-width: 2rem;
+    column-gap: 2rem;
+    column-rule: 0.3rem solid var(--accent-color);
+
+    text-align: justify;
+}
+
+.wordcut {
+    height: fit-content;
+    width: 25rem;
+    border: solid 0.2rem var(--accent-color);
+    padding: 0.3rem;
+    word-break: break-all;
+}
+
+.font{
+    font-family: "Arial";
+}
+
+.textshadow {
+    color: red;
+}
+
+.form__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form__section--box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form__section * {
+    margin: 0.5rem;
+} 
+
+.form__section :disabled{
+    opacity: 0.4;
+    background-color: red;
+}
+
+.form__section :checked + label {
+    font-weight: bold;
+    background-color: chartreuse;
+}
+
+.form__section :required {
+    outline: solid 0.2rem goldenrod;
+    outline-offset: 0.2rem;
+}
+
+.form__section :optional {
+    outline: solid 0.2rem grey;
+    outline-offset: 0.2rem;
+}
+
+.form__section :focus {
+    outline: solid 0.2rem greenyellow;
+    outline-offset: 0.2rem;
+}
+
+.form__section input:focus:invalid {
+    background: url(./assets/cancel.png) no-repeat right;
+    outline: solid 0.2rem red;
+    background-size: 10%;
+}
+
+.form__section input:focus:invalid ~ span.novalid {
+    display: block;
+}
+
+.form__section input:focus:valid {
+    background: url(./assets/checked.png) no-repeat right;
+    outline: solid 0.2rem greenyellow;
+    background-size: 10%;
+}
+
+.form__section input:focus:valid ~ span.valid {
+    display: block;
+} 
+
+.novalid {
+    display: none;
+    position: relative;
+    width: 230px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    text-align: center; 
+}
+
+.valid {
+    display: none;
+    position: relative;
+    width: 230px;
+    background-color: greenyellow;
+    color: white;
+    padding: 3px;
+    text-align: center; 
+}
