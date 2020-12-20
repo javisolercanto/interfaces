@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Transitions :: DIW</title>
+  <style media="screen">
+    :root {
+      --transition: 2s all;
+
+      --start-border: 10px dotted black;
+      --finish-border: 10px solid black;
+      --border-radius: 1rem;
+      --bg-color: orange;
+      --font-size: 4rem;
+    }
+    .box {
+      width: fit-content;
+      height: fit-content;
+
+      border: var(--start-border);
+      display: block;
+
+      transition: var(--transition);
+    }
+
+    .box:hover {
+      padding: 1rem;
+
+      border: var(--finish-border);
+      border-radius: var(--border-radius);
+      background-color: var(--bg-color);
+      font-size: var(--font-size);
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Transitions</h1>
+  <span class="box">jasoca</span>
+</body>
+
+</html>
