@@ -1,0 +1,113 @@
+:root {
+    --filter1: blur(10px);
+    --transition1: 3s all;
+    
+    --filter2: grayscale(100%);
+    --transition2: 1s all;
+    
+    --filter3: saturate(200%);
+    --transition3: 2s all;
+    
+    --filter4: hue-rotate(180deg);
+    --transition4: 1s all;
+    
+    --filter5: invert(100%);
+    --transition5: 2s all;
+    
+    --filter6: contrast(200%);
+    --transition6: 1s all;
+    
+    --filter7: opacity(10%);
+    --transition7: 1s all;
+    
+    --filter8: sepia(100%);
+    --transition8: 3s all;
+    
+    --filter9: brightness(200%);
+    --transition9: 3s all;
+    
+    --filter10: drop-shadow(1rem 3rem 2rem turquoise);
+    --transition10: 3s all;
+    
+}
+
+.image1 {
+    transition: var(--transition1);
+}
+
+.image1:hover {
+    filter: var(--filter1);
+}
+
+.image2 {
+    filter: var(--filter2);
+    transition: var(--transition2);
+}
+
+.image2:hover {
+    filter: none;
+}
+
+.image3 {
+    transition: var(--transition3);
+}
+
+.image3:hover {
+    filter: var(--filter3);
+}
+
+.image4 {
+    transition: var(--transition4);
+}
+
+.image4:hover {
+    filter: var(--filter4);
+}
+
+.image5 {
+    transition: var(--transition5);
+}
+
+.image5:hover {
+    filter: var(--filter5);
+}
+
+.image6 {
+    transition: var(--transition6);
+}
+
+.image6:hover {
+    filter: var(--filter6);
+}
+
+.image7 {
+    transition: var(--transition7);
+}
+
+.image7:hover {
+    filter: none;
+}
+
+.image8 {
+    transition: var(--transition8);
+}
+
+.image8:hover {
+    filter: var(--filter8);
+}
+
+.image9 {
+    transition: var(--transition9);
+}
+
+.image9:hover {
+    filter: var(--filter9);
+}
+
+.image10 {
+    transition: var(--transition10);
+}
+
+.image10:hover {
+    filter: var(--filter10);
+}
