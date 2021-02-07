@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devicewidth, initial-scale=1" />
+    <title>Document</title>
+    <style media="screen">
+      /* Estilo general */
+      body {
+        padding: 0;
+        background-color: gray;
+        font: 0.8em Verdana, Arial, Helvetica, sans-serif;
+      }
+      body,
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+      img {
+        width: 100%;
+      }
+      div.contenedor {
+        width: 940px;
+        margin: 20px auto 0 auto;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      /* El encabezado */
+      header.arriba {
+        margin: 0 0 10px 0;
+        padding: 5px;
+        background-color: gray;
+        border-radius: 10px;
+      }
+      header.arriba h1,
+      header.arriba h2 {
+        color: white;
+      }
+      /* El menú de navegación */
+      nav.menu-navegacion {
+        margin: 0 0 10px 0;
+        padding: 5px;
+        background-color: silver;
+        border-radius: 10px;
+      }
+      nav.menu-navegacion p {
+        color: white;
+      }
+      nav.menu-navegacion a {
+        text-decoration: none;
+        color: white;
+      }
+      /* El contenido principal */
+      section.contenido {
+        float: left;
+        width: 720px;
+        padding: 5px;
+      }
+      article {
+        margin: 0 0 20px 0;
+        border-top: 1px dotted #333;
+      }
+      /* La columna lateral */
+      aside.sidebar {
+        float: left;
+        width: 190px;
+        margin: 0 0 0 10px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #e8e8e8;
+      }
+      aside.sidebar p {
+        text-align: center;
+      }
+      /* El pie de página */
+      footer.piedepagina {
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #e8e8e8;
+        clear: both;
+      }
+      footer.piedepagina p {
+        text-align: center;
+        font-size: 0.75em;
+      }
+    </style>
+
+    <style media="screen and (max-width: 760px)">
+      body {
+        background-color: white;
+      }
+      div.contenedor {
+        width: 90%;
+      }
+      /* El encabezado */
+      header.arriba {
+        background-color: black;
+        color: white;
+      }
+      header.arriba h1,
+      header.arriba h2 {
+        font-size: 1rem;
+      }
+      /* El contenido principal */
+      section.contenido {
+        width: 100%;
+        padding: 5px;
+      }
+      /* La columna lateral */
+      aside.sidebar {
+        width: 190px;
+        margin: 0 0 0 10px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #e8e8e8;
+      }
+      aside.sidebar img {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="arriba">
+        <h1>Mi sitio web</h1>
+        <h2>El eslogan de mi sitio web</h2>
+      </header>
+      <nav class="menu-navegacion">
+        <p>
+          <a href="#">Vínculo 1</a> | <a href="#">Vínculo 2</a> |
+          <a href="#">Vínculo 3</a> | <a href="#">Vínculo 4</a> |
+          <a href="#">Vínculo 5</a> | <a href="#">Vínculo 6</a>
+        </p>
+      </nav>
+      <section class="contenido">
+        <article>
+          <h1>Mi primer artículo</h1>
+          <p>Morbi leo risus...</p>
+          <p>Integer posuer...</p>
+        </article>
+        <article>
+          <h1>Mi segundo artículo</h1>
+          <p>Etiam porta...</p>
+          <p>Lorem ipsum...</p>
+        </article>
+        <article>
+          <h1>Mi tercer artículo</h1>
+          <p>Morbi leo...</p>
+          <p>Integer posuere...</p>
+        </article>
+      </section>
+      <aside class="sidebar">
+        <p><img src="tigre.jpeg" alt="Un tigre" /></p>
+        <ul>
+          <li>Primero</li>
+          <li>Segundo</li>
+          <li>Tercero</li>
+          <li>Cuarto</li>
+        </ul>
+      </aside>
+      <footer class="piedepagina">
+        <p>
+          Concepción y realización: yo mismo. Contacto:
+          <a href="mailto:contacto@midominio.org">contacto@midominio.org</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
