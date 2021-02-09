@@ -40,19 +40,27 @@
             width: auto;
             height: auto;
             padding: 1em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
-
-            grid-area: 1 / 2 / 4 / 3;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 1.5em;
+            gap: 1em;
+
+            grid-area: 1 / 2 / 4 / 3;
+            background-color: royalblue;
         }
 
-        .dashboard__bars > div {
-            background-color: tomato;
+        .dashboard__bars__col {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+
+            background-color: salmon;
+        }
+
+        .dashboard__bars__col div {
+            width: auto;
+            height: auto;
+            background-color: red;
         }
 
         .dashboard__levels {
@@ -152,9 +160,49 @@
         </div>
 
         <div class="dashboard__bars">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="dashboard__bars__col">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="dashboard__bars__col">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="dashboard__bars__col">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
 
         <div class="dashboard__levels">
