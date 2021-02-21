@@ -1,0 +1,104 @@
+%block {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+%button-block {
+    @extend %block;
+    
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+%input-block {
+    @extend %block;
+
+    border: 1px solid #bbb;
+}
+
+#contenido {
+    padding: 30px 20px;
+
+    .col-left {
+        box-sizing: border-box;
+        width: 30%;
+        float: left;
+        padding: 10px;
+
+        .login {
+            input {
+                @extend %input-block;
+            }
+
+            button {
+                @extend %button-block;
+
+                @if $theme == 'dark' {
+                    color: #eee;
+                    background-color: lighten($colorBack, 20%);
+
+                } @else {
+                    color: #eee;
+                    background-color: darken($colorBack, 10%);
+                }
+            }
+        }
+
+       @include respond-to (small) {
+            float: none;
+            width: 100%;
+       }
+    }
+
+    .col-right {
+        box-sizing: border-box;
+        margin-left: 30%;
+        width: 70%;
+        padding: 10px;
+
+        & h1 {
+            color: $colorTitulo;
+            font-size: 1.6em;
+        }
+
+        @include respond-to (small) {
+            margin-left: 0;
+            width: 100%;
+       }
+    }
+
+    .button-action {
+        background-color: $colorBack;
+        color: white;
+
+        &:hover {
+            background-color: lighten($colorBackHover, 20%);
+        }
+    }
+
+    @include respond-to (medium) {
+        padding: 10px 20px;
+   }
+}
+
+i {
+    display: inline-block;
+}
+
+$icons: (
+  (icon-menu, "../images/menu.png", 0px, 0px, 30px, 30px),
+  (icon-news, "../images/news.png", 0px, 0px, 30px, 32px),
+  (icon-money, "../images/money.png", 0px, -100px, 50px, 50px),
+  (icon-contact, "../images/contact.png", 0px, -90px, 30px, 35px)
+);
+
+@each $name, $path, $x, $y, $height, $width in $icons {
+  .#{$name} {
+    background-image: url("#{$path}");
+    background-position: $x $y;
+    height: $height;
+    width: $width;
+  }
+}

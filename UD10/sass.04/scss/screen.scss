@@ -1,0 +1,53 @@
+@import "mixin";
+
+$colorText: #eee;
+$colorTextHover: lighten($colorText, 10%);
+$colorBack: #15a;
+$colorBackHover: lighten($colorBack, 10%);
+$colorTitulo: darken($colorBack, 10%);
+$theme: 'dark';
+
+@if $theme == 'dark' {
+    $colorBack: #138;
+
+} @else {
+    $colorBack: #ddf;
+    $colorText: #138;
+}
+
+@keyframes iluminar {
+    from {
+        @include text_bg-color;
+    }
+    to {
+        @include text_bg-color-hover;
+    }
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 12px 30px;
+    font-size: 1.8em;
+    color: #444;
+    background-color: $colorText;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer {
+    @include text_bg-color;
+    @include box-sizing(border-box);
+    
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+}
+
+@import "menu";
+@import "contenido";
